@@ -1,6 +1,6 @@
 # steamdeck-recording-to-mp4
 ## A short script to create single .mp4 file from recordings made by Steam Deck
-A simple script which merges audio and video fragments into single .mp4 file. 
+A simple script which merges audio and video fragments into single .mp4 or .mkv file. 
 ffmpeg is required.
 
 # How to use?
@@ -23,7 +23,8 @@ do
   cat ./init-stream0.m4s ./chunk-stream0-*.m4s > ./video_$i.mp4;
   cat ./init-stream1.m4s ./chunk-stream1-*.m4s > ./audio_$i.mp4;
   sleep 10s;
-  #You may change "copy ~/$i.mkv" to "copy /path/to/script/output/$i.mkv". If file already exists, you will be asked to overwrite it.
+#You may change "copy ~/$i.mkv" to "copy /path/to/script/output/$i.mkv" or change "$i.mkv" to "$i.mp4".
+#If file already exists, you will be asked to overwrite it.
   ffmpeg -i ./video_$i.mp4 -i ./audio_$i.mp4 -c copy ~/$i.mkv;
   cd $folder;
 done
