@@ -4,8 +4,12 @@ A simple script which merges audio and video fragments into single .mp4 file.
 ffmpeg is required.
 
 # How to use?
-Find *clips* folder (Steam -> Settings -> Game Recording -> Raw recordings folder) on your Steam Deck or copy it to any PC with Linux. You have to be in a folder with *clips* folder, not in that folder.
+Find *clips* folder (Steam -> Settings -> Game Recording -> Raw recordings folder) on your Steam Deck or copy it to any PC with Linux. 
+
+You have to be in a folder with *clips* folder, not in that folder.
+
 Run script - copy it's content to a file called script.name.sh, then do ```chmod +x ./script.name.sh``` to make it executable.
+
 ```
 #!/bin/bash
 folder=$(pwd)
