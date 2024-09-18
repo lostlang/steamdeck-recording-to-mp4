@@ -8,7 +8,7 @@ Find *clips* folder (Steam -> Settings -> Game Recording -> Raw recordings folde
 
 You have to be in a folder with *clips* folder, not in that folder.
 
-Run script - copy it's content to a file called script.name.sh, then do ```chmod +x ./script.name.sh``` to make it executable.
+Run script - copy it's content to a file called script.name.sh, then do ```chmod +x ./script.name.sh``` to make it executable. After that, run ```./path/to/script.name.sh``` after that.
 
 ```
 #!/bin/bash
